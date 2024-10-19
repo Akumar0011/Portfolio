@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/43dfddecb0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/th.jpeg" class="logo" alt="#">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Abhishek</span> <br> From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------About----------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/DSC_2922.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a MCA student familiar with C, Java, Python, OOPs and web development (HTML, CSS, JavaScript, Node,
+                        Express, React) and database management (SQL, MongoDB) and project creation. Pursuing a Master’s degree at
+                        Cochin University of Science and Technology, with a passion for problem-solving and continuous learning</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!-- Skills -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programing Languages:</span><br>C, Python, Java, OOPs</li>
+                            <li><span>Web Development:</span><br>HTML, CSS, JavaScript, React.js, Node.js, Express.js</li>
+                            <li><span>Database Management:</span><br>SQL, MongoDB</li>
+                            <li><span>Additional Knowlage:</span><br>Basic DSA</li>
+                            <li><span>Soft Skills:</span><br>Adaptability, Open to learn new skills</li>
+                        </ul>
+                    </div>
+                    <!-- Exp -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internship at OneNet Services Pvt Ltd.</span><br>1 month WEB DEVELOPMENT Internship</li>
+                        </ul>
+                    </div>
+                    <!-- Edu -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Cochin University of Science and Technology</span><br>Masters in Computer Application 2023-2025 <br>GPA: 7.83</li>
+                            <li><span>B N Mandal University Madhepura</span><br>Bachelors in Computer Application 2019-2022 <br>Percentage: 82.41</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------Services--------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Full Stack Developer</h2>
+                    <p>"Full Stack Developer skilled in building dynamic web applications, 
+                        creating responsive UIs, and designing robust APIs. Proficient in 
+                        frontend and backend technologies."</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Java Developer</h2>
+                    <p>"Java Developer skilled in building scalable applications, 
+                        RESTful APIs, and backend systems using Spring Boot and 
+                        Hibernate. Proficient in core Java, data structures, and 
+                        database integration."</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------portfolio-------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/voice.jpeg">
+                    <div class="layer">
+                        <h3>Voice Assistant</h3>
+                        <p>Developed a web-based voice assistant using HTML, CSS, and JavaScript. Enabled voice command recognition
+                            and response, allowing users to open websites and get real-time information. Features dynamic visual feedback
+                            and responsive design for enhanced user interaction.
+                            <br>
+                            Tools and technologies: HTML, CSS, JavaScript
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images//face.jpeg">
+                    <div class="layer">
+                        <h3>Real-Time Face Recognition Attendance System</h3>
+                        <p>Developed a real-time face recognition attendance system using OpenCV and K-Nearest Neighbors (KNN)
+                            classifier. The project captures live video, detects faces, and recognizes individuals, logging their attendance in a
+                            CSV file.
+                            <br>
+                            Tools and technologies: Python
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/simon.png">
+                    <div class="layer">
+                        <h3>Simon Says Game</h3>
+                        <p>Created an interactive "Simon Says" game that replicates the classic memory game. Designed a dynamic UI with
+                            HTML and CSS, and implemented JavaScript for game logic, including input validation, real-time feedback, and
+                            scoring to enhance user engagement.
+                            <br>
+                            Tools and technologies: HTML, CSS, JavaScript
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!-- ----------Contact----------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>abhishekbhi28@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 6202249339</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="/images/Abhishek.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Abhishek. Made with <i class="fa-solid fa-heart"></i>
+            </p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxAZVfIYi_iKJTsn1QbuPpyBk56V6jUQdShviH5s5XWdpz_hUroqA9znq4FrNRoZtqFEg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
